@@ -24,7 +24,7 @@ pipeline {
 			parallel{
 				stage('parallel-job3'){
 					steps{
-						sh 'lscp && cat /etc/passwd | grep ubuntu'
+						sh 'lscp'
 					}
 				}
 				step('parallel-job4'){
